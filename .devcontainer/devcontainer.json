@@ -1,0 +1,11 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/java
+{
+	"name": "cpp_learning",
+	"build": {
+		"dockerfile": "../Containerfile"
+	},
+	"mounts": [{"source": "${localEnv:HOME}/.ssh", "target": "/root/.ssh", "type": "bind"}],
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	 "forwardPorts": [25565]
+}
